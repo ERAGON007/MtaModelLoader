@@ -1,0 +1,18 @@
+<meta>
+    <info author="_ERAGON_" version="1.0" name="Models loader" description="Models loader supports non-caching models" type="script"/>
+
+    <!-- Global scripts -->
+    <script src="g_modelsList.lua" type="shared" cache="false"/>
+
+    <!-- Server scripts -->
+    <script src="s_modelsHandler.lua" type="client" cache="false"/>
+
+    <!-- Client scripts -->
+    <script src="c_modelsLoader.lua" type="client" cache="false"/>
+
+    <!-- Client download files -->
+    <!-- Don't forget to set download="false" only for models that you set `dontCache` to true -->
+    <file src="Models/test.txd" download="false"/> 
+    <file src="Models/test.dff" download="false"/> 
+    <file src="Models/test.col" download="false"/> 
+</meta>
