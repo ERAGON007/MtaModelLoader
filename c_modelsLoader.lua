@@ -32,10 +32,9 @@ local function loadAllModels()
     for _, modelObject in ipairs(_MODELS) do
         if (modelObject.dontCache) then
             triggerServerEvent("modelLoader:getModelFiles", resourceRoot, localPlayer, _)
-            return
+        else
+            loadOneModel(modelObject.txdFileName, modelObject.dffFileName, modelObject.objectId, modelObject.colFileName)
         end
-
-        loadOneModel(modelObject.txdFileName, modelObject.dffFileName, modelObject.objectId, modelObject.colFileName)
     end
 end
 
