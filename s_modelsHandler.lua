@@ -24,6 +24,7 @@ function(thePlayer, modelIndex)
         fileClose(txdFile)
         fileClose(dffFile)
 
+
         if (col) then
             fileClose(col)
         end
